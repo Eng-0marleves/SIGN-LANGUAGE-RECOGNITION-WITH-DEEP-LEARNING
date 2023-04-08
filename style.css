@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+/* ===============================
+Globale Section Styling Start
+=============================== */
+* {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+:root {
+    --main-color: rgba(189, 255, 0, 1);
+    --dark-color: rgba(58, 58, 58, 1);
+}
+::-webkit-scrollbar {
+    width: 12px;
+    background: var(--dark-color);
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: var(--main-color);
+    height: 100px;
+}
+body {
+    font-size: 16px;
+    overflow-x: hidden;
+    height: 1000vh;
+    background: var(--dark-color);
+}
+a {
+    text-decoration: none;
+}
+section {
+    height: 100vh;
+    width: 100%;
+}
+.title {
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+/* ===============================
+Globale Section Styling End
+=============================== */
+
+
+/* ===============================
+Nav Section Styling Start
+=============================== */
+nav {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    transition: all .3s ease-in-out;
+    z-index: 100;
+    background: var(--dark-color);
+}
+nav.active {
+    box-shadow: 0 3px 20px var(--main-color);
+}
+.logo {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #fff;
+    user-select: none;
+    height: fit-content;
+    /* background: linear-gradient(to right, var(--dark-color) 30%, var(--main-color)70%); */
+    background: linear-gradient(to right, #fff, var(--main-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+nav ul li a {
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+nav ul li a:hover {
+    color: var(--main-color);
+}
+nav ul li a.active {
+    color: var(--main-color);
+}
+.close,.menue {
+    color: #fff;
+    font-size: 1.7em;
+    cursor: pointer;
+    display: none;
+    transition: all 0.3s ease-in-out;
+}
+.close:hover,.menue:hover {
+    color: var(--main-color);
+} 
+/* ===============================
+Nav Section Styling End
+=============================== */
+
+
+/* ===============================
+Home Section Styling Start
+=============================== */
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: var(--main-color);
+}
+.home h1 {
+    font-size: 48px;
+}
+.home .mainBtn {
+    position: relative;
+    height: fit-content;
+    width: 100vw;
+    height: 10vw;
+    margin: 0 20px;
+}
+.home a{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: inline-block;
+    color: var(--main-color);
+    padding: 10px 40px;
+    font-size: 30px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transform: translate(-50%,-50%);
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, .5);
+    overflow: hidden;
+}
+.home a :before{
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    bottom: 2px;
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+.home a span:nth-child(1){
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right ,#0c002b,var(--main-color));
+    animation:  animate1 2s linear infinite;
+}
+@keyframes animate1 {
+    0% { transform: translatex(-100%);}
+    100% { transform: translatey(100%);}
+}
+.home a span:nth-child(2){
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to bottom ,#0c002b,var(--main-color));
+    animation:  animate2 2s linear infinite;
+}
+@keyframes animate2 {
+    0% { transform: translatey(-100%);}
+    100% { transform: translatey(100%);}
+}
+.home a span:nth-child(3){
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to left ,#0c002b,var(--main-color));
+    animation:  animate3 2s linear infinite;
+}
+@keyframes animate3 {
+    0% { transform: translatex(100%);}
+    100% { transform: translatex(-100%);}
+}
+.home a span:nth-child(4){
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to top ,#0c002b,var(--main-color));
+    animation:  animate4 2s linear infinite;
+}
+@keyframes animate4 {
+    0% { transform: translatey(100%);}
+    100% { transform: translatey(-100%);}
+}
+.home .circle{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(#33ccff,#ff0066);
+    border-radius: 50%;
+    animation: animate 1s infinite ease;
+}
+@keyframes animate {
+    from {
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+/* ===============================
+Home Section Styling End
+=============================== */
+
+
+/* ===============================
+Responsive Section Styling Start
+=============================== */
+@media (max-width: 928px) {
+    .home {
+        padding-top: 90px;
+    }
+}
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    .home {
+        padding-top: 50px;
+    }
+    .home .mainBtn a {
+        font-size: 16px;
+    }
+    .close, .menue {
+        display: block;
+    }
+    .close {
+        position: absolute;
+        top: 1em; right: 1em;
+        font-size: 3em;
+    }
+    nav {
+        padding: 10px;
+    }
+    nav ul {
+        position: fixed;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        transform: translateY(50%);
+        background: var(--dark-color);
+        margin-top: -74px;
+        margin-left: -10px;
+        left: -100%;
+        transition: all 0.3s ease-in-out;
+    }
+    nav ul.active {
+        left: .7em;
+    }
+    nav ul li {
+        margin: 15px auto;
+        font-size: 2em;
+        font-weight: bold;
+    }
+    nav ul.active li {
+        animation: opacity 2.5s ease-in-out;
+        animation-delay: var(--delay);
+    }
+    @keyframes opacity {
+        from { 
+            opacity: 0;
+            display: none;
+        }
+        to { 
+            opacity: 1; 
+            display: block;
+        }
+    }
+}
+@media (max-width: 532px){
+    body {
+        font-size: 11px;
+    }
+    .btns {
+        margin-top: 5px;
+        justify-content: center;
+    }
+}
+/* ===============================
+Responsive Section Styling End
+=============================== */
