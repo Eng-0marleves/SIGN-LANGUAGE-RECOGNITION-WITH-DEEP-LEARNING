@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&display=swap');
 /* ===============================
 Globale Section Styling Start
 =============================== */
@@ -25,7 +26,6 @@ Globale Section Styling Start
 body {
     font-size: 16px;
     overflow-x: hidden;
-    height: 1000vh;
     background: var(--dark-color);
 }
 a {
@@ -290,6 +290,38 @@ Learn Section Styling Start
 }
 /* ===============================
 Learn Section Styling End
+=============================== */
+
+
+
+/* ===============================
+Footer Section Styling Start
+=============================== */
+.footer {
+    padding: 20px 3vw;
+}
+.footer p {
+    font-size: 64px;
+    color: var(--main-color);
+    font-family: 'Inspiration', cursive;
+}
+.footer .links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.footer .links a {
+    margin: 0 20px;
+    font-size: 32px;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+.footer .links a:hover {
+    color: var(--main-color);
+}
+/* ===============================
+Footer Section Styling End
 =============================== */
 
 
