@@ -1,0 +1,106 @@
+[
+	{
+		"char": "A",
+		"url": "images/A.jpg"
+	},
+	{
+		"char": "B",
+		"url": "images/B.jpg"
+	},
+	{
+		"char": "C",
+		"url": "images/C.jpg"
+	},
+	{
+		"char": "D",
+		"url": "images/D.jpg"
+	},
+	{
+		"char": "E",
+		"url": "images/E.jpg"
+	},
+	{
+		"char": "F",
+		"url": "images/F.jpg"
+	},
+	{
+		"char": "G",
+		"url": "images/G.jpg"
+	},
+	{
+		"char": "H",
+		"url": "images/H.jpg"
+	},
+	{
+		"char": "I",
+		"url": "images/I.jpg"
+	},
+	{
+		"char": "J",
+		"url": "images/J.jpg"
+	},
+	{
+		"char": "K",
+		"url": "images/K.jpg"
+	},
+	{
+		"char": "L",
+		"url": "images/L.jpg"
+	},
+	{
+		"char": "M",
+		"url": "images/M.jpg"
+	},
+	{
+		"char": "N",
+		"url": "images/N.jpg"
+	},
+	{
+		"char": "O",
+		"url": "images/O.jpg"
+	},
+	{
+		"char": "P",
+		"url": "images/P.jpg"
+	},
+	{
+		"char": "Q",
+		"url": "images/Q.jpg"
+	},
+	{
+		"char": "R",
+		"url": "images/R.jpg"
+	},
+	{
+		"char": "S",
+		"url": "images/S.jpg"
+	},
+	{
+		"char": "T",
+		"url": "images/T.jpg"
+	},
+	{
+		"char": "U",
+		"url": "images/U.jpg"
+	},
+	{
+		"char": "V",
+		"url": "images/V.jpg"
+	},
+	{
+		"char": "W",
+		"url": "images/W.jpg"
+	},
+	{
+		"char": "X",
+		"url": "images/X.jpg"
+	},
+	{
+		"char": "Y",
+		"url": "images/Y.jpg"
+	},
+	{
+		"char": "Z",
+		"url": "images/Z.jpg"
+	}
+]

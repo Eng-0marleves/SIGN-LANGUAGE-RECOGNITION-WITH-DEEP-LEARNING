@@ -52,3 +52,17 @@ document.querySelectorAll("nav ul li").forEach((e) => {
 })
 })
 // End toggler
+
+// Start Learn
+fetch("./data.json")
+  .then(response => { return response.json() })
+  .then(data => {
+    for (let i = 0; i < data.length; i++) {
+      document.getElementById("cards").innerHTML
+        += `<div class="card">
+            <img src="${data[i].url}" alt="">
+            <div class="char">${data[i].char}</div>
+          </div>`
+    }
+  })
+// End Learn
