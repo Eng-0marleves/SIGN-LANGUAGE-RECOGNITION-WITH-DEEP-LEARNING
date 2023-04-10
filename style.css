@@ -326,7 +326,6 @@ Responsive Section Styling Start
         }
     }
     .about .container {
-        display: flex;
         justify-content: center;
     }
     .about .container img {
