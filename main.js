@@ -1,25 +1,3 @@
-// Animation Scrolling Start
-let section = document.querySelectorAll("section")
-function reveal() {
-  var windowHeight = window.innerHeight;
-  var elementVisible = 150;
-
-  
-  // skills animation
-  var skills = document.querySelector("#Skills");
-  var skillselementTop = skills.getBoundingClientRect().top;
-  if (skillselementTop < windowHeight - elementVisible) {
-    skills.classList.add("active");  
-  } else {
-    skills.classList.remove("active");
-  }
-
-
-
-}
-window.addEventListener("scroll", reveal);
-
-
 // Start Nav Scrolling
 window.addEventListener("scroll", () => {
     let nav = document.querySelector("nav")
